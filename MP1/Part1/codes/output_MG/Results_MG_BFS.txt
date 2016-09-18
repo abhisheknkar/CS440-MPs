@@ -1,0 +1,5 @@
+File	Algo	Expanded	Shortest
+tiny	BFS	84		42
+small	BFS	835		275
+medium	BFS	1471		438
+big	BFS	500		268

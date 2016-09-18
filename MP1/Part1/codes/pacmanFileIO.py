@@ -64,6 +64,33 @@ def printPath(outputName, outFolder, pacmanStates, solutionPath, goalStates, dim
         f.write('\n')
     f.close()
 
+def printPath_MG(outputName, outFolder, pacmanStates, solutionPath):
+    goalSequenceChar = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+    for idx, pathElement in enumerate(solutionPath):
+        if idx < len(goalSequenceChar):
+            pacmanStates[pathElement[-1][0]][pathElement[-1][1]].value = goalSequenceChar[idx]
+
+    f = open(outFolder + '/' + outputName, 'w')
+
+    for stateRow in pacmanStates:
+        for state in stateRow:
+            f.write(state.value)
+        f.write('\n')
+    f.close()
+
+def getMultiGoalFrames(pacmanStates, path, goalStates, dimensions):
+    exploredFrames = []
+    for pathElement in path:
+        currGoal = pathElement[-1]
+        for idx, node in enumerate(pathElement):
+            if idx == 0:
+                continue
+            explored = [pacmanLoc2ID(node, dimensions)]
+            exploredFrames.append(visualizeProgressArray(pacmanStates, explored, goalStates, dimensions))
+        pacmanStates[pathElement[-1][0]][pathElement[-1][1]].value = ' '
+    return exploredFrames
+
 def generate_video(img, folder, videoName):
     count = 0
     print len(img)
