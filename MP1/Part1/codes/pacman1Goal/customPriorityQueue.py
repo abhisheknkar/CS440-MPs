@@ -1,9 +1,10 @@
 __author__ = 'Abhishek'
 # This is an implementation of a priority queue where one can change the priority of a task
-from Queue import *
 import itertools
 import heapq
+
 import pacmanSearch
+
 
 class customPriorityQueue():
     pq = []                         # list of entries arranged in a heap

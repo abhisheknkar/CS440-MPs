@@ -1,0 +1,2 @@
+File		Strategy	Expanded	Shortest
+microSearch	Astar		23		4

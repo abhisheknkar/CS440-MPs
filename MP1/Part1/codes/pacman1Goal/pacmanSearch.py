@@ -195,7 +195,7 @@ def runAllAlgos_1G():
     algos = ['BFS', 'DFS', 'greedy', 'Astar']
     # fileNames1 = ['medium']
     # algos = ['BFS', 'Astar']
-    inFolder = '../data/singleGoal'
+    inFolder = '../../data/singleGoal'
     outFolder = 'output_1G'
 
     fOut = open(outFolder+'/Results_1G.txt', 'w')
@@ -214,7 +214,7 @@ def runAllAlgos_MG():
     algos = ['greedy', 'Astar']
     # fileNames1 = ['big']
     # algos = ['BFS']
-    inFolder = '../data/multiGoal'
+    inFolder = '../../data/multiGoal'
     outFolder = 'output_MG'
     fOut = open(outFolder+'/Results_MG_BFS.txt', 'w')
     fOut.write('File\tAlgo\tExpanded\tShortest\n')
