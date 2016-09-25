@@ -13,7 +13,7 @@ def graphSearch(problem):
     while 1:
         count += 1
         if count % 1000 == 0:
-            print count, curr.goalsLeft
+            print count
         if problem.frontier.empty():    # Check if the frontier is empty, in which case there is no solution
             return (problem, -1)
 
@@ -36,13 +36,13 @@ def graphSearch(problem):
             nextState.pathCost = curr.pathCost + 1
 
             #If state is not in explored or queue, add it to frontier
-            if hash(nextState) not in problem.explored and nextState not in problem.frontier.queue:
-                problem.pushToFrontier(nextState)
+            if hash(nextState) not in problem.explored:
+                if nextState not in problem.frontier.queue:
+                    problem.pushToFrontier(nextState)
 
             elif nextState in problem.frontier.queue:
                 oldNextState = problem.frontierDetails[nextState]
                 if nextState.pathCost < oldNextState.pathCost:          # If in frontier with higher path cost, replace
-                    print curr.location, nextState.location
                     problem.frontierDetails[nextState] = nextState.pathCost
                     problem.pushToFrontier(nextState)
 
@@ -76,7 +76,7 @@ def runAllAlgos_1G():
 def runAllAlgos_MG():
     # fileNames = ['tiny', 'small', 'medium', 'big']
     # algos = ['greedy', 'Astar']
-    fileNames = ['micro']
+    fileNames = ['tiny']
     algos = ['Astar']
     inFolder = '../../data/multiGoal'
     outFolder = 'output_MG'
@@ -92,7 +92,7 @@ def runAllAlgos_MG():
 
             problem.getPathCoordinates()
             printPathMG(problem, outFolder + '/' + file + '_' + algo + '.txt')
-            generate_video(problem, outFolder, algo + '_' + file + '.mp4', mode='shortest')
+            # generate_video(problem, outFolder, algo + '_' + file + '.mp4', mode='shortest')
 
             toWrite = file+'Search\t'+algo+'\t\t'+str(len(problem.exploredOrderSequence))+'\t\t'+str(len(problem.getPathCoordinates())-1)+'\n'
             print toWrite

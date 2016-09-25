@@ -106,9 +106,11 @@ class PacmanProblem():
 
     def getHeuristicValue(self, currState):
         h = float('inf')
-        for goal in self.goalStates:
-            dist = abs(goal[0]-currState.location[0])+abs(goal[1]-currState.location[0])
+        # h = 0
+        for goal in currState.goalsLeft:
+            dist = abs(goal[0]-currState.location[0])+abs(goal[1]-currState.location[1])
             h = min(h, dist)
+            # h = max(h, dist)
         return h
 
     def getSolutionPath(self):
