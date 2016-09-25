@@ -37,10 +37,10 @@ def graphSearch(problem):
 
             #If state is not in explored or queue, add it to frontier
             if hash(nextState) not in problem.explored:
-                if nextState not in problem.frontier.queue:
+                if nextState not in problem.frontierDetails:
                     problem.pushToFrontier(nextState)
 
-            elif nextState in problem.frontier.queue:
+            elif nextState in problem.frontierDetails:
                 oldNextState = problem.frontierDetails[nextState]
                 if nextState.pathCost < oldNextState.pathCost:          # If in frontier with higher path cost, replace
                     problem.frontierDetails[nextState] = nextState.pathCost
