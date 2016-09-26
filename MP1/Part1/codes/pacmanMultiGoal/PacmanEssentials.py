@@ -2,6 +2,9 @@ __author__ = 'Abhishek'
 from Queue import *
 from sets import *
 from customPriorityQueue import *
+import numpy as np
+from scipy.sparse import csr_matrix
+from scipy.sparse.csgraph import minimum_spanning_tree
 
 class PacmanState():
     parent = None
@@ -32,6 +35,18 @@ class PacmanState():
         newNode.goalsLeft = self.goalsLeft
         newNode.value = self.value
         return newNode
+
+    def getMSTWeight(self):
+        nodes = [self.location] + list(self.goalsLeft)
+        G = np.zeros((len(nodes), len(nodes)))
+        for idx1, node1 in enumerate(nodes):
+            for idx2, node2 in enumerate(nodes):
+                G[idx1][idx2] = abs(node1[0]-node2[0]) + abs(node1[1]-node2[1])
+                # print idx1, node1, idx2, node2, G[idx1][idx2]
+        G_sparse = csr_matrix(G)
+        G_MST = minimum_spanning_tree(G_sparse)
+        # print G_MST.toarray().astype(int)
+        return sum(sum(G_MST.toarray().astype(int)))
 
 class PacmanProblem():
     def __init__(self, grid, startState, goalStates, strategy, wallChar='%', goalChar='.', startChar='P', visualization=False):
@@ -92,7 +107,7 @@ class PacmanProblem():
         elif self.strategy=='Astar':
             h = self.getHeuristicValue(state)
             g = state.pathCost
-            self.frontier.put(g+h, state)
+            self.frontier.put(g+2*h, state)
         self.frontierDetails[state] = state
 
     def getFromFrontier(self):
@@ -105,13 +120,13 @@ class PacmanProblem():
         self.exploredOrderSequence = []
 
     def getHeuristicValue(self, currState):
-        h = float('inf')
+        # h = float('inf')
         # h = 0
-        for goal in currState.goalsLeft:
-            dist = abs(goal[0]-currState.location[0])+abs(goal[1]-currState.location[1])
-            h = min(h, dist)
+        # for goal in currState.goalsLeft:
+        #     dist = abs(goal[0]-currState.location[0])+abs(goal[1]-currState.location[1])
+            # h = min(h, dist)
             # h = max(h, dist)
-        return h
+        return currState.getMSTWeight()
 
     def getSolutionPath(self):
         path = []
@@ -138,3 +153,8 @@ class PacmanProblem():
         for element in path:
             pathLocs.append(element.location)
         return pathLocs
+
+if __name__ == '__main__':
+    a = PacmanState(location=(0,0), goalsLeft=((1,0), (1,2)))
+    a.getMSTWeight()
+    # print a.goalsLeft

@@ -1,2 +1,0 @@
-File		Strategy	Expanded	Shortest
-tinySearch	Astar		9362		34

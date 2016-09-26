@@ -13,7 +13,8 @@ def graphSearch(problem):
     while 1:
         count += 1
         if count % 1000 == 0:
-            print count
+            print count, len(curr.goalsLeft), curr.location, len(problem.frontierDetails)
+
         if problem.frontier.empty():    # Check if the frontier is empty, in which case there is no solution
             return (problem, -1)
 
@@ -43,7 +44,7 @@ def graphSearch(problem):
             elif nextState in problem.frontierDetails:
                 oldNextState = problem.frontierDetails[nextState]
                 if nextState.pathCost < oldNextState.pathCost:          # If in frontier with higher path cost, replace
-                    problem.frontierDetails[nextState] = nextState.pathCost
+                    problem.frontierDetails[nextState] = nextState
                     problem.pushToFrontier(nextState)
 
 def runAllAlgos_1G():
@@ -76,7 +77,7 @@ def runAllAlgos_1G():
 def runAllAlgos_MG():
     # fileNames = ['tiny', 'small', 'medium', 'big']
     # algos = ['greedy', 'Astar']
-    fileNames = ['tiny']
+    fileNames = ['small']
     algos = ['Astar']
     inFolder = '../../data/multiGoal'
     outFolder = 'output_MG'
@@ -92,7 +93,7 @@ def runAllAlgos_MG():
 
             problem.getPathCoordinates()
             printPathMG(problem, outFolder + '/' + file + '_' + algo + '.txt')
-            # generate_video(problem, outFolder, algo + '_' + file + '.mp4', mode='shortest')
+            generate_video(problem, outFolder, algo + '_' + file + '.mp4', mode='shortest')
 
             toWrite = file+'Search\t'+algo+'\t\t'+str(len(problem.exploredOrderSequence))+'\t\t'+str(len(problem.getPathCoordinates())-1)+'\n'
             print toWrite
