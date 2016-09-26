@@ -25,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/codes/pacmanMultiGoal/PacmanEssentials.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="109" column="33" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="33" />
+              <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
               <folding>
                 <element signature="e#24#43#0" expanded="true" />
                 <element signature="e#355#448#0" expanded="false" />
@@ -36,36 +36,10 @@
                 <element signature="e#1805#2371#0" expanded="false" />
                 <element signature="e#2470#3155#0" expanded="false" />
                 <element signature="e#3199#3556#0" expanded="false" />
-                <element signature="e#4055#4146#0" expanded="false" />
-                <element signature="e#4190#4248#0" expanded="false" />
-                <element signature="e#4613#4895#0" expanded="false" />
-                <element signature="e#4931#5117#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="customPriorityQueue.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codes/pacmanMultiGoal/customPriorityQueue.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding>
-                <element signature="e#116#132#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pacmanFileIO.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codes/pacmanMultiGoal/pacmanFileIO.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.4827585">
-              <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-              <folding>
-                <element signature="e#424#1103#0" expanded="false" />
-                <element signature="e#1934#2340#0" expanded="false" />
-                <element signature="e#2381#2964#0" expanded="false" />
+                <element signature="e#4053#4144#0" expanded="false" />
+                <element signature="e#4188#4246#0" expanded="false" />
+                <element signature="e#4622#4904#0" expanded="false" />
+                <element signature="e#4940#5126#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -74,8 +48,8 @@
       <file leaf-file-name="graphSearch.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/codes/pacmanMultiGoal/graphSearch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63243246">
-              <caret line="98" column="20" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.31829575">
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -105,9 +79,10 @@
         <option value="$PROJECT_DIR$/codes/pacman1Goal/pacmanState.py" />
         <option value="$PROJECT_DIR$/codes/pacmanMultiGoal/customPriorityQueue.py" />
         <option value="$PROJECT_DIR$/codes/pacman1Goal/pacmanSearch.py" />
+        <option value="$PROJECT_DIR$/data/multiGoal/bigSearch.txt" />
         <option value="$PROJECT_DIR$/codes/pacmanMultiGoal/pacmanFileIO.py" />
-        <option value="$PROJECT_DIR$/codes/pacmanMultiGoal/graphSearch.py" />
         <option value="$PROJECT_DIR$/codes/pacmanMultiGoal/PacmanEssentials.py" />
+        <option value="$PROJECT_DIR$/codes/pacmanMultiGoal/graphSearch.py" />
       </list>
     </option>
   </component>
@@ -216,24 +191,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pacmanMultiGoal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Part1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Part1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pacman1Goal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -508,15 +465,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1592262" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.49702382" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3034258" sideWeight="0.5870536" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3034258" sideWeight="0.58928573" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.49702382" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3034258" sideWeight="0.41294643" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3034258" sideWeight="0.4107143" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.4732143" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -582,14 +539,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/codes/pacmanMultiGoal/customPriorityQueue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codes/pacmanMultiGoal/pacmanFileIO.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -597,8 +546,6 @@
           <folding>
             <element signature="e#424#1103#0" expanded="false" />
             <element signature="e#1934#2340#0" expanded="false" />
-            <element signature="e#2381#2964#0" expanded="false" />
-            <element signature="e#3935#4624#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -625,10 +572,10 @@
             <element signature="e#1805#2371#0" expanded="false" />
             <element signature="e#2470#3155#0" expanded="false" />
             <element signature="e#3199#3556#0" expanded="false" />
-            <element signature="e#4055#4146#0" expanded="false" />
-            <element signature="e#4190#4248#0" expanded="false" />
-            <element signature="e#4613#4895#0" expanded="false" />
-            <element signature="e#4931#5117#0" expanded="false" />
+            <element signature="e#4053#4144#0" expanded="false" />
+            <element signature="e#4188#4246#0" expanded="false" />
+            <element signature="e#4622#4904#0" expanded="false" />
+            <element signature="e#4940#5126#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -637,7 +584,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#116#132#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -648,8 +597,6 @@
           <folding>
             <element signature="e#424#1103#0" expanded="false" />
             <element signature="e#1934#2340#0" expanded="false" />
-            <element signature="e#2381#2964#0" expanded="false" />
-            <element signature="e#3935#4624#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -676,10 +623,10 @@
             <element signature="e#1805#2371#0" expanded="false" />
             <element signature="e#2470#3155#0" expanded="false" />
             <element signature="e#3199#3556#0" expanded="false" />
-            <element signature="e#4055#4146#0" expanded="false" />
-            <element signature="e#4190#4248#0" expanded="false" />
-            <element signature="e#4613#4895#0" expanded="false" />
-            <element signature="e#4931#5117#0" expanded="false" />
+            <element signature="e#4053#4144#0" expanded="false" />
+            <element signature="e#4188#4246#0" expanded="false" />
+            <element signature="e#4622#4904#0" expanded="false" />
+            <element signature="e#4940#5126#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -688,7 +635,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="e#116#132#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -699,8 +648,6 @@
           <folding>
             <element signature="e#424#1103#0" expanded="false" />
             <element signature="e#1934#2340#0" expanded="false" />
-            <element signature="e#2381#2964#0" expanded="false" />
-            <element signature="e#3935#4624#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -965,15 +912,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codes/pacmanMultiGoal/pacmanFileIO.py">
+    <entry file="file://$PROJECT_DIR$/data/multiGoal/bigSearch.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.4827585">
-          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding>
-            <element signature="e#424#1103#0" expanded="false" />
-            <element signature="e#1934#2340#0" expanded="false" />
-            <element signature="e#2381#2964#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -987,10 +930,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/codes/pacmanMultiGoal/pacmanFileIO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="4" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
+          <folding>
+            <element signature="e#424#1103#0" expanded="false" />
+            <element signature="e#1934#2340#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/codes/pacmanMultiGoal/PacmanEssentials.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="109" column="33" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="33" />
+          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
           <folding>
             <element signature="e#24#43#0" expanded="true" />
             <element signature="e#355#448#0" expanded="false" />
@@ -1001,18 +955,18 @@
             <element signature="e#1805#2371#0" expanded="false" />
             <element signature="e#2470#3155#0" expanded="false" />
             <element signature="e#3199#3556#0" expanded="false" />
-            <element signature="e#4055#4146#0" expanded="false" />
-            <element signature="e#4190#4248#0" expanded="false" />
-            <element signature="e#4613#4895#0" expanded="false" />
-            <element signature="e#4931#5117#0" expanded="false" />
+            <element signature="e#4053#4144#0" expanded="false" />
+            <element signature="e#4188#4246#0" expanded="false" />
+            <element signature="e#4622#4904#0" expanded="false" />
+            <element signature="e#4940#5126#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/codes/pacmanMultiGoal/graphSearch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63243246">
-          <caret line="98" column="20" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.31829575">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>

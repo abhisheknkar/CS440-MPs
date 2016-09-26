@@ -1,0 +1,4 @@
+File		Strategy	Expanded	Shortest
+mediumMaze.txt	Astar		195		68
+bigMaze.txt	Astar		779		266
+openMaze.txt	Astar		438		74

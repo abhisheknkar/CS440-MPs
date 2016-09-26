@@ -1,6 +1,7 @@
 __author__ = 'Abhishek'
 
 from RubikEssentials import *
+import time
 
 def graphSearch(problem):
     problem.initializeFrontier()    # Initialize Frontier
@@ -10,8 +11,8 @@ def graphSearch(problem):
     count = 0
     while 1:
         count += 1
-        if count % 100 == 0:
-            print count, curr.pathCost, problem.getHeuristicValue(curr)
+        # if count % 100 == 0:
+        #     print count, curr.pathCost, problem.getHeuristicValue(curr)
 
         if problem.frontier.empty():    # Check if the frontier is empty, in which case there is no solution
             return -1
@@ -55,13 +56,16 @@ def makeNewPerms(problem):
     state.printToFile('LR_1.txt')
 
 if __name__ == '__main__':
-    # problem = RubikProblem(inputFile='LR_1.txt')
-    problem = RubikProblem(inputFile='../../data/cube2_1.txt')
-    problem = graphSearch(problem)
-    if problem == -1:
-        print 'No solution found'
-    else:
-        print problem.getSolutionMoves()
-
-    # problem = RubikProblem(inputFile='RotateLR.txt', strategy='Astar')
-    # makeNewPerms(problem)
+    fOut = open('Results.txt', 'w')
+    fOut.write('File\t\tExpanded\tPath\t\t\t\t\tTime\n')
+    for i in range(3):
+        print 'Solving cube2_'+str(i+1)+'.txt'
+        t1 = time.time()
+        problem = RubikProblem(inputFile='../../data/cube1_'+str(i+1)+'.txt')
+        problem = graphSearch(problem)
+        t2 = time.time()
+        if problem == -1:
+            print 'No solution found'
+        else:
+            fOut.write('cube1_'+str(i+1)+'.txt\t'+str(len(problem.explored))+'\t\t'+str(problem.getSolutionMoves())+'\t\t'+str(t2-t1)+'\n')
+    fOut.close()

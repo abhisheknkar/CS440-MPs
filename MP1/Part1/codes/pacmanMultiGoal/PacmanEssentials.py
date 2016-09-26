@@ -107,7 +107,7 @@ class PacmanProblem():
         elif self.strategy=='Astar':
             h = self.getHeuristicValue(state)
             g = state.pathCost
-            self.frontier.put(g+2*h, state)
+            self.frontier.put(g+h, state)
         self.frontierDetails[state] = state
 
     def getFromFrontier(self):
@@ -120,13 +120,14 @@ class PacmanProblem():
         self.exploredOrderSequence = []
 
     def getHeuristicValue(self, currState):
-        # h = float('inf')
+        h = float('inf')
         # h = 0
-        # for goal in currState.goalsLeft:
-        #     dist = abs(goal[0]-currState.location[0])+abs(goal[1]-currState.location[1])
-            # h = min(h, dist)
+        for goal in currState.goalsLeft:
+            dist = abs(goal[0]-currState.location[0])+abs(goal[1]-currState.location[1])
+            h = min(h, dist)
             # h = max(h, dist)
-        return currState.getMSTWeight()
+        # return currState.getMSTWeight()
+        return h
 
     def getSolutionPath(self):
         path = []

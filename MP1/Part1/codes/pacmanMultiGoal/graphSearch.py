@@ -13,7 +13,7 @@ def graphSearch(problem):
     while 1:
         count += 1
         if count % 1000 == 0:
-            print count, len(curr.goalsLeft), curr.location, len(problem.frontierDetails)
+            print count, 'Goals left: ', len(curr.goalsLeft), 'Current location: ', curr.location, 'Frontier size: ', len(problem.frontierDetails)
 
         if problem.frontier.empty():    # Check if the frontier is empty, in which case there is no solution
             return (problem, -1)
@@ -50,8 +50,8 @@ def graphSearch(problem):
 def runAllAlgos_1G():
     # fileNames = ['medium', 'big', 'open']
     # algos = ['BFS', 'DFS', 'greedy', 'Astar']
-    fileNames = ['medium']
-    algos = ['BFS']
+    fileNames = ['medium', 'big', 'open']
+    algos = ['Astar']
     inFolder = '../../data/singleGoal'
     outFolder = 'output_1G'
 
@@ -66,8 +66,8 @@ def runAllAlgos_1G():
             problem = graphSearch(problem)
 
             printPath1G(problem, outFolder + '/' + file + '_' + algo + '.txt')
-            generate_video(problem, outFolder+'/shortest/', algo + '_' + file + '.mp4', mode='shortest')
-            generate_video(problem, outFolder+'/exploration/', algo + '_' + file + '.mp4', mode='exploration')
+            # generate_video(problem, outFolder+'/shortest/', algo + '_' + file + '.mp4', mode='shortest')
+            # generate_video(problem, outFolder+'/exploration/', algo + '_' + file + '.mp4', mode='exploration')
 
             toWrite = file+'Maze.txt\t'+algo+'\t\t'+str(len(problem.exploredOrderSequence))+'\t\t'+str(len(problem.getPathCoordinates())-1)+'\n'
             print toWrite
@@ -77,7 +77,7 @@ def runAllAlgos_1G():
 def runAllAlgos_MG():
     # fileNames = ['tiny', 'small', 'medium', 'big']
     # algos = ['greedy', 'Astar']
-    fileNames = ['small']
+    fileNames = ['big']
     algos = ['Astar']
     inFolder = '../../data/multiGoal'
     outFolder = 'output_MG'
@@ -101,4 +101,4 @@ def runAllAlgos_MG():
     fOut.close()
 
 if __name__ == '__main__':
-    runAllAlgos_MG()
+    runAllAlgos_1G()

@@ -72,7 +72,8 @@ def printPathMG(problem, outFile):
         if pathElement in goalsLeft:
             goalsLeft.remove(pathElement)
             gridCopy = list(problem.grid)
-            gridCopy[pathElement[0]][pathElement[1]].value = goalSequenceChar[count]
+            if count < len(goalSequenceChar):
+                gridCopy[pathElement[0]][pathElement[1]].value = goalSequenceChar[count]
             count += 1
 
     for row in gridCopy:

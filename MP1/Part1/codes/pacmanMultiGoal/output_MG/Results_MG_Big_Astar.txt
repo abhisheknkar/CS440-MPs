@@ -1,0 +1,2 @@
+File		Strategy	Expanded	Shortest
+bigSearch	Astar		10378		616

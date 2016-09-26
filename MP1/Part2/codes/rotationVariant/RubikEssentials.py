@@ -124,7 +124,7 @@ class RubikProblem():
     faces = ['L', 'R', 'F', 'Ba', 'T', 'Bo']
     dirs = ['', '\'']
 
-    def __init__(self, inputFile, strategy):
+    def __init__(self, inputFile, strategy='Astar'):
         self.startState = RubikState(inputFile)
         self.startState.pathCost = 0
         self.strategy = strategy
